@@ -8,7 +8,8 @@
   <link rel="icon" type="image/png" href="/img/logo.png">
   <!-- Bootstrap CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Muhamad Ilham</title>
 </head>
 
@@ -21,7 +22,6 @@
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
         type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
-        Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -50,11 +50,21 @@
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">MUHAMAD ILHAM</h1>
 
-      <!-- Icon Divider -->
+      <!-- Icon Divider 1-->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <!-- Masthead Subheading -->
         <p class="masthead-subheading font-weight-light mb-0">SADOP</p>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Icon Divider 2-->
+      <div class="">
+        <div class="divider-custom-line"></div>
+        <!-- Masthead Subheading -->
+        <p class="masthead-subheading font-weight-light mb-0">
+          <a target="_blank" href="https://www.instagram.com/sadopsa/?hl=id"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="mailto:ahmadilham48oo@gmail.com"><i class="far fa-envelope"></i></a>
+        </p>
         <div class="divider-custom-line"></div>
       </div>
     </div>
@@ -63,34 +73,59 @@
 
   <!-- Product Section -->
   <section class="page-section text-black mb-0" id="Portfolio">
-  <div class="container">
-    <div class="container d-flex align-items-center flex-column">
-    <h2 >PORTFOLIO</h2>
-    <!-- Icon Divider -->
-    <div class="divider-custom divider-dark">
-      <div class="divider-custom-line"></div>
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0"></p>
-      <div class="divider-custom-line"></div>
-    </div>
-  </div>
-    <div class="row">
+    <div class="container">
+      <div class="container d-flex align-items-center flex-column">
+        <h2>PORTFOLIO</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-dark">
+          <div class="divider-custom-line"></div>
+          <!-- Masthead Subheading -->
+          <p class="masthead-subheading font-weight-light mb-0"></p>
+          <div class="divider-custom-line"></div>
+        </div>
+      </div>
+      <div class="row">
 
-      <!-- Portfolio Item 1 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white">
-              <i class="fa fa-bullseye"></i>
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fa fa-bullseye"></i>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h3>WORKING EXPERIENCE</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+            <div class="col">
+              <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h4 class="container d-flex align-items-center flex-column"">WORKING EXPERIENCE</h4>
+              <!---accordion--->
+                  <div class=" accordion accordion-flush" id="AccordWX">
+                    <div class="accordion-item">
+
+                      <h2 class="accordion-header" id="flushAccordWX">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flushWX-collapseOne" aria-expanded="false"
+                          aria-controls="flushWX-collapseOne">
+                          <div class="row">
+                            <div class="col-5">
+                              <p>2020 - 2021</p>
+                            </div>
+                            <div class="col-7">
+                              <p> Internship at PT.Schneider Electric Manufacturing Batam</p>
+                            </div>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="flushWX-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushAccordWX"
+                        data-bs-parent="#AccordWX">
+                        <div class="accordion-body">1 year of internship experience from July 2020 to July
+                          2021 as a Software Engineer. Web application development using several
+                          technologies, such as native PHP, javascript, SQL Server, and OutSystems.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!---/accordion-->
               </div>
             </div>
           </div>
@@ -108,31 +143,136 @@
           <div class="col">
             <div class="card" style="width: 100%;">
               <div class="card-body">
-                <h3>ORGANIZATION</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+                <h4 class="container d-flex align-items-center flex-column"">ORGANIZATION</h4>
+                <!---accordion--->
+                <div class=" accordion accordion-flush" id="AccordORG">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flushAccordORG">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flushOrg-collapseOne" aria-expanded="false"
+                        aria-controls="flushOrg-collapseOne">
+                        <div class="row">
+                          <div class="col-5">
+                            <p>2021 - Present</p>
+                          </div>
+                          <div class="col-7">
+                            <p> Batam Linux User Group as grand advisory board</p>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flushOrg-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushAccordORG"
+                      data-bs-parent="#AccordORG">
+                      <div class="accordion-body">Grand Advisory Board of  Batam Linux User Group.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flushAccordORG">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flushOrg-collapseTwo" aria-expanded="false"
+                        aria-controls="flushOrg-collapseTwo">
+                        <div class="row">
+                          <div class="col-5">
+                            <p>2020 - 2021</p>
+                          </div>
+                          <div class="col-7">
+                            <p> Batam Linux User Group as Coordinator Of Media & Information Division</p>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flushOrg-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flushAccordORG"
+                      data-bs-parent="#AccordORG">
+                      <div class="accordion-body">Coordinator of Media and Information Division at Batam Linux User Group. </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flushAccordORG">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flushOrg-collapseThree" aria-expanded="false"
+                        aria-controls="flushOrg-collapseThree">
+                        <div class="row">
+                          <div class="col-5">
+                            <p>2019 - 2020</p>
+                          </div>
+                          <div class="col-7">
+                            <p> Batam Linux User Group as Coordinator Of Information & Communication Division</p>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flushOrg-collapseThree" class="accordion-collapse collapse" aria-labelledby="flushAccordORG"
+                      data-bs-parent="#AccordORG">
+                      <div class="accordion-body">Coordinator of Information and Communication Division at Batam Linux User Group.</div>
+                    </div>
+                  </div>
               </div>
+              <!---/accordion-->
+              
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Portfolio Item 3 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white">
-              <i class="fa fa-bullseye"></i>
-            </div>
+    <!-- Portfolio Item 3 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+          <div class="portfolio-item-caption-content text-center text-white">
+            <i class="fa fa-bullseye"></i>
           </div>
-          <div class="col">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h3>EDUCATION</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h4 class="container d-flex align-items-center flex-column"">EDUCATION</h4>
+                <!---accordion--->
+                <div class=" accordion accordion-flush" id="AccordEDU">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flushAccordEDU">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flushEdu-collapseOne" aria-expanded="false"
+                        aria-controls="flushEdu-collapseOne">
+                        <div class="row">
+                          <div class="col-5">
+                            <p>2018 - 2021</p>
+                          </div>
+                          <div class="col-7">
+                            <p>State Polytechnic of Batam (D3 - Informatic Engineering)</p>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flushEdu-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushAccordEDU"
+                      data-bs-parent="#AccordEDU">
+                      <div class="accordion-body">State Polytechnic of Batam (D3 - Informatic Engineering)</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flushAccordEDU">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flushEdu-collapseTwo" aria-expanded="false"
+                        aria-controls="flushEdu-collapseTwo">
+                        <div class="row">
+                          <div class="col-5">
+                            <p>2014 - 2017</p>
+                          </div>
+                          <div class="col-7">
+                            <p> Batam State High School 5 - Kepulauan Riau, Batam</p>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flushEdu-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flushAccordEDU"
+                      data-bs-parent="#AccordEDU">
+                      <div class="accordion-body">Batam State High School 5 - Kepulauan Riau, Batam. Science Class </div>
+                    </div>
+                  </div>
+                  
+              </div>
+              <!---/accordion-->
               </div>
             </div>
           </div>
@@ -140,20 +280,101 @@
       </div>
 
       <!-- Portfolio Item 4 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white">
-              <i class="fa fa-bullseye"></i>
+      <div class=" col-md-6 col-lg-6">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="portfolio-item-caption-content text-center text-white">
+                      <i class="fa fa-bullseye"></i>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 100%;">
+                      <div class="card-body">
+                        <h4 class="container d-flex align-items-center flex-column"">EVENT</h4>
+               <!---accordion--->
+               <div class=" accordion accordion-flush" id="AccordEvent">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flushAccordEvent">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushEvent-collapseOne" aria-expanded="false"
+                      aria-controls="flushEvent-collapseOne">
+                      <div class="row">
+                        <div class="col-5">
+                          <p>2019</p>
+                        </div>
+                        <div class="col-7">
+                          <p>Open Source Competition 2019 Organize by BLUG</p>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flushEvent-collapseOne" class="accordion-collapse collapse" aria-labelledby="flushAccordEvent"
+                    data-bs-parent="#AccordEvent">
+                    <div class="accordion-body">Chief Executive of Open Source Competition 2019 Organize by Batam Linux User Group</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flushAccordEvent">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushEvent-collapseTwo" aria-expanded="false"
+                      aria-controls="flushEvent-collapseTwo">
+                      <div class="row">
+                        <div class="col-5">
+                          <p>2019</p>
+                        </div>
+                        <div class="col-7">
+                          <p> National Seminar - The Role of Open Source in Industrial Revolution 4.0</p>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flushEvent-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flushAccordEvent"
+                    data-bs-parent="#AccordEvent">
+                    <div class="accordion-body">Host on National Seminar - The Role of OpenSource in Industrial Revolution 4.0 Organize by BLUG   at State Polytechnic of Batam</div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flushAccordEvent">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushEvent-collapseThree" aria-expanded="false"
+                      aria-controls="flushEvent-collapseThree">
+                      <div class="row">
+                        <div class="col-5">
+                          <p>2019</p>
+                        </div>
+                        <div class="col-7">
+                          <p> KMIPN 2019 Pekanbaru - Network Security Competition </p>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flushEvent-collapseThree" class="accordion-collapse collapse" aria-labelledby="flushAccordEvent"
+                    data-bs-parent="#AccordEvent">
+                    <div class="accordion-body">Network Security Competition Participants on KMIPN 2019 in Pekanbaru as a finalist representing State Polytechnic of Batam </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flushAccordEvent">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flushEvent-collapseFour" aria-expanded="false"
+                      aria-controls="flushEvent-collapseFour">
+                      <div class="row">
+                        <div class="col-5">
+                          <p>2018</p>
+                        </div>
+                        <div class="col-7">
+                          <p> Free Open Source Software Day 2018 (FOSSDAY 2018) </p>
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flushEvent-collapseFour" class="accordion-collapse collapse" aria-labelledby="flushAccordEvent"
+                    data-bs-parent="#AccordEvent">
+                    <div class="accordion-body">Host on Free Open Source Software Day 2018 Organize by Batam Linux User Group at Kepri Mall</div>
+                  </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h3>EVENT</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+              <!---/accordion-->
               </div>
             </div>
           </div>
@@ -166,32 +387,34 @@
 
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-  <!---script-->
-  <script src="https://kit.fontawesome.com/aa3ea0379e.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-  </script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <div class=" scroll-to-top d-lg-none position-fixed ">
+    <a class=" js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+                          <i class="fa fa-chevron-up"></i>
+                          </a>
+                      </div>
+                      <!---script-->
+                      <script src="https://kit.fontawesome.com/aa3ea0379e.js" crossorigin="anonymous"></script>
+                      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                        crossorigin="anonymous">
+                      </script>
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                        crossorigin="anonymous">
+                      </script>
+                      <script src="vendor/jquery/jquery.min.js"></script>
+                      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                      <!-- Plugin JavaScript -->
+                      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+                      <!-- Contact Form JavaScript -->
+                      <script src="js/jqBootstrapValidation.js"></script>
+                      <script src="js/contact_me.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-  <!---script-->
+                      <!-- Custom scripts for this template -->
+                      <script src="js/freelancer.min.js"></script>
+                      <!---script-->
 </body>
 
 </html>
