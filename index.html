@@ -711,7 +711,12 @@
     }
     document.oncontextmenu = new Function("return false");
     document.getElementsByClassName('my-img').ondragstart = function() { return false; };
-    </script>
+    $('img').on('dragstart', function(event) { event.preventDefault(); });
+    $("body").on("contextmenu", "img", function(e) {
+      return false;
+    });
+  </script>
+   
 </body>
 
 </html>
